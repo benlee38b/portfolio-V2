@@ -1,24 +1,27 @@
-import React from 'react';
-import './App.css';
+import { Router, Link } from '@reach/router';
+import GlobalStyle from './styles/Global';
+import Navbar from './components/navbar/Navbar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react';
+
+export class App extends Component {
+  state = {
+    navbarOpen: false,
+  };
+  render() {
+    return (
+      <div className="App">
+        <Navbar
+          navbarState={this.state.navbarOpen}
+          handleNavbar={this.handleNavbar}
+        />
+        <GlobalStyle />
+      </div>
+    );
+  }
+  handleNavbar = () => {
+    this.setState({ navbarOpen: !this.state.navbarOpen });
+  };
 }
 
 export default App;
