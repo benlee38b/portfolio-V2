@@ -52,7 +52,7 @@ const NavBar = styled(animated.nav)`
   width: 100%;
   top: 0;
   left: 0;
-  background: #37718e;
+  background: #c1666b;
   z-index: 1;
   font-size: 3.5rem;
 `;
@@ -62,7 +62,7 @@ const FlexContainer = styled.div`
   display: flex;
   margin: auto;
   padding: 0 2rem;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 7rem;
 `;
 
@@ -77,13 +77,14 @@ const NavLinks = styled(animated.ul)`
     font-weight: 600;
     border-bottom: 1px solid transparent;
     margin: 0 1.5rem;
+    margin: auto 60px;
     transition: all 300ms linear 0s;
     text-decoration: none;
     cursor: pointer;
 
     &:hover {
-      color: #fdcb6e;
-      border-bottom: 1px solid #fdcb6e;
+      color: #d4b483;
+      border-bottom: 1px solid #d4b483;
     }
 
     @media (max-width: 768px) {

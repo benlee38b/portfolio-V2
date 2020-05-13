@@ -1,4 +1,3 @@
-import { Router, Link } from '@reach/router';
 import GlobalStyle from './styles/Global';
 import Navbar from './components/navbar/Navbar';
 
