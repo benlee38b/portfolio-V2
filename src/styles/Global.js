@@ -18,10 +18,9 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-   background: #FFEFBA;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+   background: #4E6766
+
 
 
 

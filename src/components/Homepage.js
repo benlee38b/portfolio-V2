@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/homepage.css';
-import photo from '../assets/ben-lee.jpg';
+import photo from '../assets/ben-lee.png';
 import { Link } from '@reach/router';
 
 const Homepage = () => {
@@ -40,9 +40,10 @@ const Homepage = () => {
         </a>
       </p>
       <h1 className="job-title">Junior Full Stack Developer</h1>
+
       <p className="tech-list">
         <span className="tech-type">Back End:</span> Javascript | Node.js |
-        MongoDB | PSQL | express{' '}
+        MongoDB | PSQL | Express{' '}
       </p>
       <p className="tech-list">
         <span className="tech-type">Front End:</span> HTML | CSS | React | Axios{' '}

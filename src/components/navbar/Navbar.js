@@ -51,7 +51,7 @@ const NavBar = styled(animated.nav)`
   width: 100%;
   top: 0;
   left: 0;
-  background: #c1666b;
+  background: #290628;
   z-index: 1;
   font-size: 3.5rem;
 `;
@@ -76,7 +76,7 @@ const NavLinks = styled(animated.ul)`
   margin: auto 0;
 
   & a {
-    color: #dfe6e9;
+    color: white;
     text-transform: uppercase;
     font-weight: 600;
     border-bottom: 1px solid transparent;
@@ -87,8 +87,8 @@ const NavLinks = styled(animated.ul)`
     cursor: pointer;
 
     &:hover {
-      color: #d4b483;
-      border-bottom: 1px solid #d4b483;
+      color: #9a9283;
+      border-bottom: 1px solid #9a9283;
     }
 
     @media (max-width: 1116px) {

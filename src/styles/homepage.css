@@ -5,34 +5,48 @@
   flex-wrap: no-wrap;
   align-items: center;
   margin-top: 50px;
-  height: 600px;
+  height: 370px;
   position: relative;
   /* flex-grow: 1; */
-  top: 50px;
-  width: 75%;
+  top: 200px;
+  width: 65%;
   padding: 10px;
-  color: #618985;
+  border: solid 0.5px white;
+  border-radius: 1%;
+  color: white;
+
+  background-color: #9a9283;
+  /* box-shadow: 1.5px 3px #cfcdcd; */
 }
 .profile-pic {
-  width: 216px;
-  height: 197.5px;
-  border-radius: 50%;
+  position: absolute;
+  top: -140px;
+  border-bottom: solid 0.5px white;
+  width: 225px;
+  height: 225px;
+  border-radius: 100%;
   margin: 20px auto;
-  border: solid 0.5px;
 }
 
 .social-icon {
   width: 80px;
   height: 80px;
-  margin: 10px;
-  fill: #618985;
+  margin: 110px 10px 10px 10px;
+  fill: whitesmoke;
 }
 
 .job-title {
-  font-size: 4rem;
+  font-size: 4.1rem;
   text-transform: uppercase;
-  border-bottom: dashed 0.5px;
+  border-bottom: 3px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: dotted;
+  border-color: whitesmoke;
+
   width: auto;
+  font-weight: 2000;
   padding: 0px;
   text-align: center;
   /* border: solid; */
@@ -49,7 +63,7 @@
   text-align: center;
   /* border: solid; */
   font-weight: 100;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   max-width: 860px;
 }
 
