@@ -1,6 +1,7 @@
 import GlobalStyle from './styles/Global';
 import Navbar from './components/navbar/Navbar';
-
+import { Router } from '@reach/router';
+import Homepage from './components/Homepage';
 import React, { Component } from 'react';
 
 export class App extends Component {
@@ -15,6 +16,9 @@ export class App extends Component {
           handleNavbar={this.handleNavbar}
         />
         <GlobalStyle />
+        <Router>
+          <Homepage path="/" />
+        </Router>
       </div>
     );
   }

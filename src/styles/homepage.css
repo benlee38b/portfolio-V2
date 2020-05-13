@@ -1,0 +1,35 @@
+.homepage-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+  height: 600px;
+  position: relative;
+  top: 50px;
+  width: 75%;
+  padding: 10px;
+}
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+.job-title {
+  font-size: 40px;
+  text-transform: uppercase;
+  border-bottom: dashed 0.5px;
+  width: auto;
+  padding: 0px;
+  text-align: center;
+  /* border: solid; */
+}
+.tech-list {
+  width: auto;
+  text-align: center;
+  /* border: solid; */
+  font-size: 24.5px;
+  max-width: 668px;
+}

@@ -4,7 +4,6 @@ import { useSpring, animated, config } from 'react-spring';
 import { Link } from '@reach/router';
 import Minimisedmenu from './MinimisedMenu';
 import CollapseMenu from './CollapseMenu';
-import HomeIcon from './HomeIcon';
 
 const Navbar = (props) => {
   const barAnimation = useSpring({
