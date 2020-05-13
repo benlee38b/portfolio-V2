@@ -61,8 +61,13 @@ const FlexContainer = styled.div`
   display: flex;
   margin: auto;
   padding: 0 2rem;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 7rem;
+
+  @media (max-width: 1115px) {
+    padding: 0 1rem;
+    justify-content: start;
+  }
 `;
 
 const NavLinks = styled(animated.ul)`
@@ -86,7 +91,7 @@ const NavLinks = styled(animated.ul)`
       border-bottom: 1px solid #d4b483;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1116px) {
       display: none;
     }
   }
@@ -95,7 +100,7 @@ const NavLinks = styled(animated.ul)`
 const MinWrapper = styled.div`
   margin: auto 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 1115px) {
     display: none;
   }
 `;

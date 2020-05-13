@@ -16,7 +16,9 @@ const Minimisedmenu = (props) => {
 export default Minimisedmenu;
 
 const Wrapper = styled.div`
-  position: relative;
+  position: fixed;
+  left: 10px;
+  bottom: 20px;
   padding-top: 0.7rem;
   cursor: pointer;
   display: block;

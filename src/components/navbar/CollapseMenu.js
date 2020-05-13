@@ -49,11 +49,12 @@ const CollapseMenu = (props) => {
 export default CollapseMenu;
 
 const CollapseWrapper = styled(animated.div)`
-  background: #37718e;
+  background: #c1666b;
   position: fixed;
   top: 4.5rem;
   left: 0;
   right: 0;
+  z-index: 1;
 `;
 
 const NavLinks = styled.ul`
