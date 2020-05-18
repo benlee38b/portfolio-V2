@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/homepage.css';
 import photo from '../assets/ben-lee.png';
-import { Link } from '@reach/router';
 
 const Homepage = () => {
   return (

@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar';
 import { Router } from '@reach/router';
 import Homepage from './components/Homepage';
 import React, { Component } from 'react';
+import AboutMeBio from './components/AboutMeBio';
 
 export class App extends Component {
   state = {
@@ -18,6 +19,7 @@ export class App extends Component {
         <GlobalStyle />
         <Router>
           <Homepage path="/" />
+          <AboutMeBio path="/about-me" />
         </Router>
       </div>
     );

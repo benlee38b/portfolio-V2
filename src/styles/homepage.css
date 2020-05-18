@@ -9,15 +9,16 @@
   position: relative;
   /* flex-grow: 1; */
   top: 200px;
-  width: 65%;
+
+  width: 800px;
   padding: 10px;
   border: solid 0.5px white;
   border-radius: 1%;
   color: white;
 
   background-color: #9a9283;
-  /* box-shadow: 1.5px 3px #cfcdcd; */
 }
+
 .profile-pic {
   position: absolute;
   top: -140px;
@@ -56,7 +57,22 @@
   .job-title {
     font-size: 3rem;
   }
+  .homepage-container {
+    width: 40vw;
+  }
 }
+@media (max-width: 814px) {
+  .homepage-container {
+    width: 90vw;
+  }
+}
+@media (max-width: 814px) {
+  .homepage-container {
+    width: 90vw;
+    height: 450px;
+  }
+}
+
 .tech-list {
   width: auto;
   margin: 8px 0px;
