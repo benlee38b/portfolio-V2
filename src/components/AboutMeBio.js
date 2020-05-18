@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/about-me.css';
-import photo from '../assets/Ben-Lee-rectangle.jpg';
+import photo from '../assets/ben-lee.png';
 
 const AboutMeBio = () => {
   return (

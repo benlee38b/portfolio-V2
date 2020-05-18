@@ -1,15 +1,14 @@
 .bio-container {
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
 
   grid-template-areas: 'pic bio';
-  flex-wrap: no-wrap;
-  align-items: flex-end;
+
+  align-items: stretch;
   margin-top: 50px;
   justify-content: center;
   position: relative;
-  /* flex-grow: 1; */
   top: 100px;
   grid-auto-flow: dense;
 
@@ -22,17 +21,20 @@
   /* background-color: #9a9283; */
 }
 .profile-pic-about-me {
-  /* position: relative; */
+  position: relative;
+  top: 10px;
+  padding-right: 10px;
   grid-area: pic;
-  width: 500px;
-  height: 450px;
-  justify-self: start;
+  border-radius: 100%;
+  width: 480px;
+  height: 480px;
+  justify-self: end;
   /* padding: 20px; */
 }
 .about-me-text-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   height: 450px;
   grid-area: bio;
@@ -44,11 +46,56 @@
 }
 .northcoders-link {
   text-decoration: none;
+  font-weight: bolder;
 }
 
 .about-me-title {
-  font-size: 50px;
-  margin-top: 100px;
+  font-size: 70px;
+  margin-top: 60px;
+
   border-bottom: dotted;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  color: #3d405b;
+  font-weight: 1000;
+}
+@media (max-width: 1210px) {
+  .bio-text {
+    max-width: 500px;
+  }
+}
+@media (max-width: 1005px) {
+  .bio-text {
+    max-width: 95%;
+  }
+  .bio-container {
+    top: 100px;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    margin: auto;
+  }
+  .profile-pic-about-me {
+    align-self: center;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  .about-me-text-container {
+    position: relative;
+    top: 1vw;
+  }
+  .about-me-title {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 678px) {
+  .about-me-text-container {
+    top: 80px;
+  }
+}
+@media (max-width: 435px) {
+  .about-me-text-container {
+    top: 140px;
+  }
 }

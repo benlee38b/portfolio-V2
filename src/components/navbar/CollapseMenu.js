@@ -49,7 +49,7 @@ const CollapseMenu = (props) => {
 export default CollapseMenu;
 
 const CollapseWrapper = styled(animated.div)`
-  background: #c1666b;
+  background: #290628;
   position: fixed;
   top: 4.5rem;
   left: 0;
