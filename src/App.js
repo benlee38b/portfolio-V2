@@ -4,6 +4,7 @@ import { Router } from '@reach/router';
 import Homepage from './components/Homepage';
 import React, { Component } from 'react';
 import AboutMeBio from './components/AboutMeBio';
+import ProjectCard from './components/ProjectCard';
 
 export class App extends Component {
   state = {
@@ -12,14 +13,15 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar
+        {/* <Navbar
           navbarState={this.state.navbarOpen}
           handleNavbar={this.handleNavbar}
-        />
+        /> */}
         <GlobalStyle />
         <Router>
           <Homepage path="/" />
           <AboutMeBio path="/about-me" />
+          <ProjectCard path="projects" />
         </Router>
       </div>
     );
