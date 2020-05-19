@@ -39,11 +39,14 @@
   align-items: center;
   border-left: solid;
   height: 480px;
+  width: auto;
   grid-area: bio;
 }
 .bio-text {
+  margin-top: 20px;
   font-size: 20px;
   width: 700px;
+  word-spacing: 1px;
 }
 .northcoders-link {
   text-decoration: none;
@@ -61,15 +64,19 @@
 }
 @media (max-width: 1210px) {
   .bio-text {
-    max-width: 500px;
+    max-width: 625px;
+  }
+  .about-me-text-container {
+    padding-left: 30px;
   }
 }
 @media (max-width: 1005px) {
   .bio-text {
-    max-width: 95%;
+    max-width: 600px;
+    margin-bottom: 0px;
   }
   .bio-container {
-    top: 100px;
+    top: 140px;
     display: flex;
     width: auto;
     flex-direction: column;
@@ -80,24 +87,43 @@
     height: 250px;
     width: 250px;
     left: 0px;
-    margin-bottom: -20px;
+    top: -70px;
+    /* margin-bottom: -20px; */
   }
   .about-me-text-container {
     left: 0px;
-    border: none;
+    padding: 10px;
+    border-right: solid;
+    height: 529px;
   }
   .about-me-title {
     margin-top: 10%;
   }
 }
 
-@media (max-width: 678px) {
+@media (max-width: 637px) {
+  .bio-text {
+    max-width: 500px;
+  }
   .about-me-text-container {
-    /* top: 80px; */
+    height: 609px;
   }
 }
-@media (max-width: 435px) {
+@media (max-width: 534px) {
   .about-me-text-container {
-    /* top: 140px; */
+    height: 710px;
+  }
+  .bio-text {
+    max-width: 400px;
+    padding: 5px;
+  }
+}
+@media (max-width: 426px) {
+  .about-me-text-container {
+    height: 820px;
+  }
+  .bio-text {
+    max-width: 350px;
+    padding: 5px;
   }
 }
