@@ -4,8 +4,8 @@ import photo from '../assets/ben-lee.png';
 import { useSpring, animated } from 'react-spring';
 
 const calc = (x, y) => [
-  -(y - window.innerHeight / 2) / 100,
-  (x - window.innerWidth / 2) / 100,
+  -(y - window.innerHeight / 2) / 200,
+  (x - window.innerWidth / 2) / 200,
   1.1,
 ];
 const trans = (x, y, s) =>
@@ -58,7 +58,7 @@ const Homepage = () => {
           </svg>
         </a>
       </p>
-      <h1>BEN LEE</h1>
+      <h1 className="name-title">BEN LEE</h1>
       <h2 className="job-title">Junior Full Stack Developer</h2>
 
       <p className="tech-list">

@@ -20,14 +20,17 @@ const AboutMeBio = () => {
           </a>{' '}
           Coding Bootcamp in Manchester. The course has a particular focus on
           JavaScript and working collaboratively in an agile environment.
-          Previously, he worked in schools and the higher education sector.
-          Until the end of January 2020, he worked as a data administrator at
-          Manchester Metropolitan University, where he developed a keen interest
-          in computer programming. Ben Lee’s other work has included: working as
-          an advisor for the university’s pastoral team; teaching and supporting
-          students in GCSE mathematics at The Kingsway School, Manchester; and
-          private mathematics tuition. Ben graduated with a BSc(Hons) Chemistry
-          (upper second class) from The University of Manchester in 2017.
+          <br></br>
+          <br></br> Previously, he worked in schools and the higher education
+          sector. Until the end of January 2020, he worked as a data
+          administrator at Manchester Metropolitan University, where he
+          developed a keen interest in computer programming.<br></br>
+          <br></br> Ben Lee’s other work has included: working as an advisor for
+          the university’s pastoral team; teaching and supporting students in
+          GCSE mathematics at The Kingsway School, Manchester; and private
+          mathematics tuition.<br></br>
+          <br></br> Ben graduated with a BSc(Hons) Chemistry (upper second
+          class) from The University of Manchester in 2017.
         </p>
       </section>
     </main>
