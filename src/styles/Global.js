@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     box-sizing: border-box;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-   background: #4E6766
+   background: #ACC8E5
 
 
 

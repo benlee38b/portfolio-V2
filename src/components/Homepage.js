@@ -1,11 +1,31 @@
 import React from 'react';
 import '../styles/homepage.css';
 import photo from '../assets/ben-lee.png';
+import { useSpring, animated } from 'react-spring';
+
+const calc = (x, y) => [
+  -(y - window.innerHeight / 2) / 100,
+  (x - window.innerWidth / 2) / 100,
+  1.1,
+];
+const trans = (x, y, s) =>
+  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 const Homepage = () => {
+  const [props, set] = useSpring(() => ({
+    xys: [0, 0, 1],
+    config: { mass: 5, tension: 350, friction: 40 },
+  }));
   return (
-    <main className="homepage-container">
+    <animated.div
+      class="card"
+      className="homepage-container"
+      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+      onMouseLeave={() => set({ xys: [0, 0, 1] })}
+      style={{ transform: props.xys.interpolate(trans) }}
+    >
       <img className="profile-pic" src={photo} alt="profile" />
+
       <p className="social-links">
         <a
           href="https://www.linkedin.com/in/benjamin-lee-21356214a/"
@@ -38,7 +58,8 @@ const Homepage = () => {
           </svg>
         </a>
       </p>
-      <h1 className="job-title">Junior Full Stack Developer</h1>
+      <h1>BEN LEE</h1>
+      <h2 className="job-title">Junior Full Stack Developer</h2>
 
       <p className="tech-list">
         <span className="tech-type">Back End:</span> Javascript | Node.js |
@@ -47,7 +68,7 @@ const Homepage = () => {
       <p className="tech-list">
         <span className="tech-type">Front End:</span> HTML | CSS | React | Axios{' '}
       </p>
-    </main>
+    </animated.div>
   );
 };
 export default Homepage;

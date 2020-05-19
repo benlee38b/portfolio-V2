@@ -13,10 +13,10 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Navbar
+        <Navbar
           navbarState={this.state.navbarOpen}
           handleNavbar={this.handleNavbar}
-        /> */}
+        />
         <GlobalStyle />
         <Router>
           <Homepage path="/" />
