@@ -61,13 +61,22 @@
   z-index: 2;
   border-top-left-radius: 5%;
 } */
-/* .project-card-title {
- 
+.git-hub-link-container {
+  border-top: dotted 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.git-hub-link-project {
+  width: 30px;
+  margin-top: 10px;
+}
+.project-card-title {
   font-size: 20px;
   font-weight: bolder;
-  margin: auto;
-  padding: 20px;
-} */
+  text-decoration: underline;
+}
 .project-image-container {
   display: flex;
   grid-area: pic;

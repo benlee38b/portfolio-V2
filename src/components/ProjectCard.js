@@ -1,10 +1,9 @@
 import React from 'react';
 import '../styles/projectCard.css';
-// import Card from 'react-bootstrap/Card';
-// import Button from 'react-bootstrap/Button';
-// import CardGroup from 'react-bootstrap/CardDeck';
+import Button from '@material-ui/core/Button';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import pokemonLogo from '../assets/pokemon_logo.png';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const ProjectCard = () => {
   return (
@@ -26,10 +25,20 @@ const ProjectCard = () => {
         <h4 className="project-card-title">Project 1</h4>
         <p className="project-info-text">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ad
-          adipisci magnam consequatur animi aut nam amet fuga, nulla nisi?
-          Voluptates vero eveniet ipsum numquam blanditiis voluptatem quo sint
-          pariatur.
+          adipisci magnam consequatur animi aut nam amet
         </p>
+        <div className="git-hub-link-container">
+          <Button
+            className="git-hub-link-project"
+            variant="contained"
+            size="large"
+            color="secondary"
+            href="#outlined-buttons"
+          >
+            <GitHubIcon style={{ fontSize: 20, padding: '3px' }} />
+            GitHub
+          </Button>
+        </div>
       </div>
     </motion.div>
   );
