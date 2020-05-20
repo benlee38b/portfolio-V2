@@ -7,12 +7,12 @@
   position: relative;
   top: 100px;
   text-align: justify;
-  /* border: solid; */
+  color: #112a46;
   border-radius: 10%;
   height: auto;
   min-height: 340px;
   width: 250px;
-  margin: auto;
+  margin: 20px auto;
   cursor: pointer;
   box-shadow: 10px 25px 50px -12px rgba(0, 0, 0, 0.35);
 }
@@ -67,10 +67,16 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  color: #112a46;
 }
 .git-hub-link-project {
-  width: 30px;
-  margin-top: 10px;
+  width: 110px;
+  position: relative;
+  top: 3px;
+  height: 30px;
+  padding: 10px;
+  margin-top: 20px;
+  color: #112a46;
 }
 .project-card-title {
   font-size: 20px;
@@ -83,7 +89,7 @@
   transform: inherit;
   flex-direction: column;
   justify-content: center;
-  border: solid 1px;
+  /* border: solid 1px; */
   border-bottom: none;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
@@ -104,7 +110,7 @@
   transform: inherit;
   z-index: 2;
   font-size: 15px;
-  border: solid 1px;
+
   display: flex;
   grid-area: description;
   background-color: whitesmoke;
@@ -114,5 +120,9 @@
   flex-direction: column;
   /* justify-content: center; */
 }
-.project-info-text {
+.project-list-container {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: auto;
 }

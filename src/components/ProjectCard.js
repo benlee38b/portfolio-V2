@@ -6,12 +6,12 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import { motion } from 'framer-motion';
 
 const ProjectCard = (props) => {
-  const { projectTitle, img, description, GitHubLink } = props;
+  const { projectTitle, img, description, gitHubLink } = props;
   return (
     <motion.div
       animate
       className="project-card-container"
-      whileHover={{ scale: 1.05 }}
+      whileHover={{ scale: 1.1 }}
       // whileTap={{ scale: 0.9 }}
     >
       {/* <div className="project-title-container">
@@ -31,10 +31,12 @@ const ProjectCard = (props) => {
             variant="contained"
             size="large"
             color="secondary"
-            href="#outlined-buttons"
+            href={gitHubLink}
           >
-            <GitHubIcon style={{ fontSize: 20, padding: '3px' }} />
-            View on GitHub
+            <GitHubIcon
+              style={{ fontSize: 20, padding: '3px', color: '#112a46' }}
+            />
+            GitHub
           </Button>
         </div>
       </div>
