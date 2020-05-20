@@ -4,7 +4,7 @@ import { Router } from '@reach/router';
 import Homepage from './components/Homepage';
 import React, { Component } from 'react';
 import AboutMeBio from './components/AboutMeBio';
-import ProjectCard from './components/ProjectCard';
+import ProjectList from './components/ProjectList';
 
 export class App extends Component {
   state = {
@@ -21,7 +21,7 @@ export class App extends Component {
         <Router>
           <Homepage path="/" />
           <AboutMeBio path="/about-me" />
-          <ProjectCard path="projects" />
+          <ProjectList path="projects" />
         </Router>
       </div>
     );
