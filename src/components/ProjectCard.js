@@ -32,6 +32,7 @@ const ProjectCard = (props) => {
             size="large"
             color="secondary"
             href={gitHubLink}
+            target="_blank"
           >
             <GitHubIcon
               style={{ fontSize: 20, padding: '3px', color: '#112a46' }}

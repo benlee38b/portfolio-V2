@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FadeIn from 'react-fade-in';
 import supermarketAisle from '../assets/supermarket-aisle.jpg';
 import newsWebsite from '../assets/news-website.jpg';
 import crimeImg from '../assets/crime-img.png';
@@ -33,18 +34,27 @@ export class ProjectList extends Component {
   render() {
     const { projects } = this.state;
     return (
-      <main className="project-list-container">
-        {projects.map((project) => {
-          return (
-            <ProjectCard
-              projectTitle={project['projectTitle']}
-              img={project.img}
-              description={project.description}
-              gitHubLink={project.gitHubLink}
-            />
-          );
-        })}
-      </main>
+      <>
+        <div className="project-list-title-container">
+          <h1 className="project-list-title">PROJECTS</h1>
+        </div>
+        <FadeIn
+          className="project-list-container"
+          delay="75"
+          transitionDuration="1500"
+        >
+          {projects.map((project) => {
+            return (
+              <ProjectCard
+                projectTitle={project['projectTitle']}
+                img={project.img}
+                description={project.description}
+                gitHubLink={project.gitHubLink}
+              />
+            );
+          })}
+        </FadeIn>
+      </>
     );
   }
 }
