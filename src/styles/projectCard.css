@@ -1,61 +1,96 @@
 .project-card-container {
   display: grid;
-  grid-template-rows: 50px 150px 200px;
+  grid-template-rows: 140px 200px;
   grid-template-areas:
-    'title'
     'pic'
     'description';
   position: relative;
   top: 100px;
-  text-align: center;
+  text-align: justify;
   /* border: solid; */
   border-radius: 10%;
   height: auto;
-  min-height: 400px;
+  min-height: 340px;
   width: 250px;
   margin: auto;
+  cursor: pointer;
+  box-shadow: 10px 25px 50px -12px rgba(0, 0, 0, 0.35);
 }
-.project-title-container {
+.project-card-container:hover {
+  /* grid-template-rows: 60px 120px 190px; */
+  /* animation: Translate 0.15s ease-in-out forwards;
+  animation-fill-mode: forwards; */
+  box-shadow: 0 50px 50px -12px rgba(0, 0, 0, 0.55);
+}
+
+@keyframes Translate {
+  0% {
+    grid-template-rows: 50px 140px 200px;
+  }
+  25% {
+    grid-template-rows: 52.5px 135px 202.5px;
+  }
+
+  50% {
+    grid-template-rows: 55px 130px 205px;
+  }
+  75% {
+    grid-template-rows: 57.5px 125px 207.5px;
+  }
+
+  100% {
+    grid-template-rows: 60px 120px 210px;
+  }
+}
+.project-card-container:hover .project-image-container {
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(100%);
+  /* background: linear-gradient(89deg, #ffffff, #666363);
+  background-size: 400% 400%; */
+  /* animation: Animation 2s ease forwards; */
+}
+
+/* .project-title-container {
   grid-area: title;
   background-color: whitesmoke;
   padding: 0px;
+  position: relative;
   border: solid 1px;
-  border-top-right-radius: 10%;
-  border-top-left-radius: 10%;
-}
-.project-card-title {
-  /* height: 100%; */
+  transform: inherit;
+  border-top-right-radius: 5%;
+  z-index: 2;
+  border-top-left-radius: 5%;
+} */
+/* .project-card-title {
+ 
   font-size: 20px;
   font-weight: bolder;
   margin: auto;
   padding: 20px;
-}
+} */
 .project-image-container {
   display: flex;
   grid-area: pic;
-
+  transform: inherit;
   flex-direction: column;
   justify-content: center;
-  border-left: solid 1px;
-  border-right: solid 1px;
-  background-color: whitesmoke;
-  background:
-        /* top, transparent black, faked with gradient */ linear-gradient(
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2)
-  );
-  background-origin: content-box;
-
-  background-blend-mode: screen;
+  border: solid 1px;
+  border-bottom: none;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  background-color: rgb(238, 169, 169);
 }
 .project-img {
   width: 100%;
+  z-index: 1;
   vertical-align: middle;
   padding: 10px 0px;
 }
 
 .project-info-container {
   padding: 10px 5px;
+  transform: inherit;
+  z-index: 2;
   font-size: 15px;
   border: solid 1px;
   display: flex;
