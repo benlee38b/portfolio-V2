@@ -4,6 +4,10 @@ import { useSpring, animated, config } from 'react-spring';
 import { Link } from '@reach/router';
 import Minimisedmenu from './MinimisedMenu';
 import CollapseMenu from './CollapseMenu';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import HomeIcon from '@material-ui/icons/Home';
+import WorkIcon from '@material-ui/icons/Work';
+import ContactMailIcon from '@material-ui/icons/ContactMail';
 
 const Navbar = (props) => {
   const barAnimation = useSpring({
@@ -23,10 +27,22 @@ const Navbar = (props) => {
       <NavBar style={barAnimation}>
         <FlexContainer>
           <NavLinks style={linkAnimation}>
-            <Link to="/">Home</Link>
-            <Link to="/about-me">About Me</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/">
+              <HomeIcon style={{ fontSize: '40px', margin: '5px' }} />
+              Home
+            </Link>
+            <Link to="/about-me">
+              <AccountCircleIcon style={{ fontSize: '40px', margin: '5px' }} />{' '}
+              About Me
+            </Link>
+            <Link to="/projects">
+              <WorkIcon style={{ fontSize: '30px', margin: '5px' }} />
+              Projects
+            </Link>
+            <Link to="/contact">
+              <ContactMailIcon style={{ fontSize: '30px', margin: '5px' }} />
+              Contact
+            </Link>
           </NavLinks>
           <MinWrapper>
             <Minimisedmenu
@@ -81,17 +97,17 @@ const NavLinks = styled(animated.ul)`
     font-weight: 600;
     border-bottom: 1px solid transparent;
     margin: 0 1.5rem;
-    margin: auto 60px;
+    margin: auto 2.25vw;
     transition: all 300ms linear 0s;
     text-decoration: none;
     cursor: pointer;
 
     &:hover {
-      color: #9a9283;
-      border-bottom: 1px solid #9a9283;
+      color: #fdcb6e;
+      border-bottom: 1px solid #fdcb6e;
     }
 
-    @media (max-width: 1116px) {
+    @media (max-width: 1022px) {
       display: none;
     }
   }
@@ -100,7 +116,7 @@ const NavLinks = styled(animated.ul)`
 const MinWrapper = styled.div`
   margin: auto 0;
 
-  @media (min-width: 1115px) {
+  @media (min-width: 1022px) {
     display: none;
   }
 `;

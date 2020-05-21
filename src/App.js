@@ -5,6 +5,7 @@ import Homepage from './components/Homepage';
 import React, { Component } from 'react';
 import AboutMeBio from './components/AboutMeBio';
 import ProjectList from './components/ProjectList';
+import ContactForm from './components/ContactForm';
 
 export class App extends Component {
   state = {
@@ -21,7 +22,8 @@ export class App extends Component {
         <Router>
           <Homepage path="/" />
           <AboutMeBio path="/about-me" />
-          <ProjectList path="projects" />
+          <ProjectList path="/projects" />
+          <ContactForm path="/contact" />
         </Router>
       </div>
     );

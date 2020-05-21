@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/about-me.css';
 import photo from '../assets/ben-lee.png';
+import FadeIn from 'react-fade-in';
 
 const AboutMeBio = () => {
   return (

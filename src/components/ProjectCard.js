@@ -12,13 +12,7 @@ const ProjectCard = (props) => {
       animate
       className="project-card-container"
       whileHover={{ scale: 1.1 }}
-      // whileTap={{ scale: 0.9 }}
     >
-      {/* <div className="project-title-container">
-        <h4 className="project-card-title" animate>
-          Project 1
-        </h4>
-      </div> */}
       <div className="project-image-container">
         <img src={img} alt="project-img" className="project-img" />
       </div>
