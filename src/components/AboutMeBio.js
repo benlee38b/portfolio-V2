@@ -5,7 +5,7 @@ import FadeIn from 'react-fade-in';
 
 const AboutMeBio = () => {
   return (
-    <main className="bio-container">
+    <FadeIn className="bio-container" delay="75" transitionDuration="1500">
       <img className="profile-pic-about-me" src={photo} alt="profile" />
       <section className="about-me-text-container">
         <h1 className="about-me-title">About Me</h1>
@@ -34,7 +34,7 @@ const AboutMeBio = () => {
           class) from The University of Manchester in 2017.
         </p>
       </section>
-    </main>
+    </FadeIn>
   );
 };
 

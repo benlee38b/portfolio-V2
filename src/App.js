@@ -23,6 +23,7 @@ export class App extends Component {
           <Homepage path="/" />
           <AboutMeBio path="/about-me" />
           <ProjectList path="/projects" />
+
           <ContactForm path="/contact" />
         </Router>
       </div>

@@ -5,3 +5,13 @@
   margin: auto;
   font-size: 30px;
 }
+.p-heading1 {
+  font-size: 3.5rem;
+  border-bottom: dotted;
+  width: 35%;
+  margin: auto;
+  font-weight: bolder;
+}
+label.text-muted {
+  color: #112a46 !important;
+}
