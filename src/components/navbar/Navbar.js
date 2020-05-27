@@ -28,19 +28,48 @@ const Navbar = (props) => {
         <FlexContainer>
           <NavLinks style={linkAnimation}>
             <Link to="/">
-              <HomeIcon style={{ fontSize: '40px', margin: '5px' }} />
+              <HomeIcon
+                style={{
+                  fontSize: '40px',
+                  margin: '5px',
+                  position: 'relative',
+                  bottom: '3px',
+                }}
+              />
               Home
             </Link>
             <Link to="/about-me">
-              <AccountCircleIcon style={{ fontSize: '40px', margin: '5px' }} />{' '}
+              <AccountCircleIcon
+                style={{
+                  fontSize: '40px',
+                  margin: '5px',
+                  position: 'relative',
+                  bottom: '3px',
+                  left: '13px',
+                }}
+              />{' '}
               About Me
             </Link>
             <Link to="/projects">
-              <WorkIcon style={{ fontSize: '30px', margin: '5px' }} />
+              <WorkIcon
+                style={{
+                  fontSize: '30px',
+                  margin: '5px',
+                  position: 'relative',
+                  bottom: '3px',
+                }}
+              />
               Projects
             </Link>
             <Link to="/contact">
-              <ContactMailIcon style={{ fontSize: '30px', margin: '5px' }} />
+              <ContactMailIcon
+                style={{
+                  fontSize: '30px',
+                  margin: '5px',
+                  position: 'relative',
+                  bottom: '3px',
+                }}
+              />
               Contact
             </Link>
           </NavLinks>
@@ -110,7 +139,7 @@ const NavLinks = styled(animated.ul)`
     @media (max-width: 1022px) {
       display: none;
     }
-  }
+   
 `;
 
 const MinWrapper = styled.div`

@@ -5,6 +5,7 @@ import FadeIn from 'react-fade-in';
 import Alert from 'react-bootstrap/Alert';
 import Button from '@material-ui/core/Button';
 import { Form, FormGroup, Label, Input } from 'reactstrap';
+import emailImg from '../assets/email.png';
 
 class ContactForm extends Component {
   state = {
@@ -79,68 +80,87 @@ class ContactForm extends Component {
           </div>
         </Alert>
 
-        <main className="contact-form-container">
-          <FadeIn delay="75" transitionDuration="1500">
+        <FadeIn
+          delay="75"
+          transitionDuration="1500"
+          className="contact-form-container"
+        >
+          <div className="contact-form-title-container">
             <h1 className="p-heading1">Get in Touch</h1>
-            <Form onSubmit={this.handleSubmit.bind(this)}>
-              <FormGroup controlId="formBasicEmail">
-                <Label className="text-muted">Email address</Label>
-                <Input
-                  type="email"
-                  name="email"
-                  value={this.state.email}
-                  className="text-primary"
-                  onChange={this.handleChange.bind(this, 'email')}
-                  placeholder="Enter email"
-                  required
-                />
-              </FormGroup>
-              <FormGroup controlId="formBasicName">
-                <Label className="text-muted">Name</Label>
-                <Input
-                  type="text"
-                  name="name"
-                  value={this.state.name}
-                  className="text-primary"
-                  onChange={this.handleChange.bind(this, 'name')}
-                  placeholder="Name"
-                  required
-                />
-              </FormGroup>
-              <FormGroup controlId="formBasicSubject">
-                <Label className="text-muted">Subject</Label>
-                <Input
-                  type="text"
-                  name="subject"
-                  className="text-primary"
-                  value={this.state.subject}
-                  onChange={this.handleChange.bind(this, 'subject')}
-                  placeholder="Subject"
-                  required
-                />
-              </FormGroup>
-              <FormGroup controlId="formBasicMessage">
-                <Label className="text-muted">Message</Label>
-                <Input
-                  type="textarea"
-                  name="message"
-                  className="text-primary"
-                  value={this.state.message}
-                  onChange={this.handleChange.bind(this, 'message')}
-                  required
-                />
-              </FormGroup>
-              <Button
-                variant="contained"
-                color="primary"
-                className="submit-button"
-                type="submit"
-              >
-                Submit
-              </Button>
-            </Form>
-          </FadeIn>
-        </main>
+          </div>
+          <div className="email-img-container">
+            <img
+              src={emailImg}
+              alt="email-img"
+              style={{
+                width: '100px',
+                height: '100px',
+                margin: 'auto',
+                color: '#112a46',
+              }}
+            />
+          </div>
+          <Form
+            onSubmit={this.handleSubmit.bind(this)}
+            className="input-fields-container"
+          >
+            <FormGroup controlid="formBasicEmail">
+              <Label className="text-muted">Email address</Label>
+              <Input
+                type="email"
+                name="email"
+                value={this.state.email}
+                className="text-primary"
+                onChange={this.handleChange.bind(this, 'email')}
+                placeholder="Enter email"
+                required
+              />
+            </FormGroup>
+            <FormGroup controlid="formBasicName">
+              <Label className="text-muted">Name</Label>
+              <Input
+                type="text"
+                name="name"
+                value={this.state.name}
+                className="text-primary"
+                onChange={this.handleChange.bind(this, 'name')}
+                placeholder="Name"
+                required
+              />
+            </FormGroup>
+            <FormGroup controlid="formBasicSubject">
+              <Label className="text-muted">Subject</Label>
+              <Input
+                type="text"
+                name="subject"
+                className="text-primary"
+                value={this.state.subject}
+                onChange={this.handleChange.bind(this, 'subject')}
+                placeholder="Subject"
+                required
+              />
+            </FormGroup>
+            <FormGroup controlid="formBasicMessage">
+              <Label className="text-muted">Message</Label>
+              <Input
+                type="textarea"
+                name="message"
+                className="text-primary"
+                value={this.state.message}
+                onChange={this.handleChange.bind(this, 'message')}
+                required
+              />
+            </FormGroup>
+            <Button
+              variant="contained"
+              color="primary"
+              className="submit-button"
+              type="submit"
+            >
+              Submit
+            </Button>
+          </Form>
+        </FadeIn>
       </>
     );
   }

@@ -2,27 +2,62 @@
   position: relative;
   top: 150px;
   width: 60%;
-  padding: 20px;
 
+  background: whitesmoke;
   margin: auto;
   font-size: 30px;
-  border: double;
+  border-radius: 5%;
+  box-shadow: 0 15px 45px -12px rgba(0, 0, 0, 0.55);
+}
+.input-fields-container {
+  padding: 20px;
 }
 .submit-button {
-  width: 20%;
+  width: 30%;
+  height: 35px;
   margin: auto;
-  transform: scale(1.3);
+  transform: skew(0.5);
+}
+.email-img-container {
+  width: 100%;
+  padding: 10px;
+  background-color: lavender;
+  display: flex;
 }
 .form-control {
   border-radius: 0.5rem;
+  border-color: rgb(160, 159, 159);
+}
+.contact-form-title-container {
+  /* background-color: #112a46; */
+  width: 100%;
+  border-radius: inherit;
+  padding-top: 30px;
 }
 .p-heading1 {
-  font-size: 3.5rem;
-  border-bottom: dotted;
-  width: 35%;
+  font-size: 4.5rem;
+  text-align: center;
+  color: #112a46;
+  /* width: 100%; */
+
+  height: 60px;
+
+  position: relative;
+
   margin: auto;
+  /* margin-bottom: 25px; */
   font-weight: bolder;
 }
 label.text-muted {
   color: #112a46 !important;
+}
+@media (max-width: 1005px) {
+  .p-heading1 {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .p-heading1 {
+    font-size: 8vw;
+  }
 }

@@ -17,9 +17,6 @@
   box-shadow: 10px 25px 50px -12px rgba(0, 0, 0, 0.35);
 }
 .project-card-container:hover {
-  /* grid-template-rows: 60px 120px 190px; */
-  /* animation: Translate 0.15s ease-in-out forwards;
-  animation-fill-mode: forwards; */
   box-shadow: 0 50px 50px -12px rgba(0, 0, 0, 0.55);
 }
 
@@ -45,22 +42,8 @@
 .project-card-container:hover .project-image-container {
   -webkit-filter: grayscale(50%);
   filter: grayscale(100%);
-  /* background: linear-gradient(89deg, #ffffff, #666363);
-  background-size: 400% 400%; */
-  /* animation: Animation 2s ease forwards; */
 }
 
-/* .project-title-container {
-  grid-area: title;
-  background-color: whitesmoke;
-  padding: 0px;
-  position: relative;
-  border: solid 1px;
-  transform: inherit;
-  border-top-right-radius: 5%;
-  z-index: 2;
-  border-top-left-radius: 5%;
-} */
 .git-hub-link-container {
   border-top: dotted 0.5px;
   display: flex;
