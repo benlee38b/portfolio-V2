@@ -130,7 +130,12 @@ class ContactForm extends Component {
                   required
                 />
               </FormGroup>
-              <Button variant="contained" color="primary" type="submit">
+              <Button
+                variant="contained"
+                color="primary"
+                className="submit-button"
+                type="submit"
+              >
                 Submit
               </Button>
             </Form>

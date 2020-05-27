@@ -4,9 +4,9 @@ import photo from '../assets/ben-lee.png';
 import { useSpring, animated } from 'react-spring';
 import FadeIn from 'react-fade-in';
 const calc = (x, y) => [
-  -(y - window.innerHeight / 2) / 200,
-  (x - window.innerWidth / 2) / 200,
-  1.1,
+  -(y - window.innerHeight / 2) / 300,
+  (x - window.innerWidth / 2) / 300,
+  1.08,
 ];
 const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;

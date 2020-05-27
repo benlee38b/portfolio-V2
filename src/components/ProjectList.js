@@ -12,7 +12,7 @@ export class ProjectList extends Component {
         projectTitle: 'Aisle Navigate',
         img: supermarketAisle,
         description:
-          'a smart shopping assistant that categorieses user groceries and provides and efficient route through any supermarket using crowd sourced data.',
+          'A Progressive Web App that works as a smart shopping assistant that categorises user groceries and provides and efficient route through any supermarket using crowd sourced data.',
         gitHubLink: 'https://github.com/benlee38b/project-sweep-fe',
       },
       {

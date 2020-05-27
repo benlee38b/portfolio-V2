@@ -7,6 +7,7 @@ const AboutMeBio = () => {
   return (
     <FadeIn className="bio-container" delay="75" transitionDuration="1500">
       <img className="profile-pic-about-me" src={photo} alt="profile" />
+
       <section className="about-me-text-container">
         <h1 className="about-me-title">About Me</h1>
         <p className="bio-text">

@@ -73,12 +73,13 @@
 @media (max-width: 814px) {
   .homepage-container {
     width: 90vw;
+    height: 450px;
   }
 }
-@media (max-width: 814px) {
+@media (max-width: 514px) {
   .homepage-container {
     width: 90vw;
-    height: 450px;
+    height: 550px;
   }
 }
 
